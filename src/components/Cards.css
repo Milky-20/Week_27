@@ -1,0 +1,25 @@
+.card{
+	border: 3px solid #716cc2;
+	color: azure;
+	height: 315px; 
+	width: 220px; 
+	display: inline-block;
+	margin-top: 200px;
+	margin-left: 30px;
+}
+.cardName{
+	height: 70px; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.card-price{
+	font-weight: bolder;
+	
+}
+.selected{ 
+	background-size: 100% 100%; 
+	background-repeat: no-repeat;
+	border: 3px solid #080202;
+	font-weight: bolder;
+}
