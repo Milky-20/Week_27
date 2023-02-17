@@ -46,3 +46,16 @@
 	background-repeat: no-repeat;
 	transform: scale(1.1);
 }
+/* .button{
+    margin: 2rem auto 1rem;
+    padding: 0.8rem 1.8rem;
+    background: rgb(212, 243, 255);
+    background: rgb(235, 232, 232);
+    color: rgb(62, 62, 62);
+    font-weight: bold;
+    border: none;
+}
+.button-selected{
+    background: rgb(26, 157, 74);
+    color: rgb(255, 255, 255);
+} */

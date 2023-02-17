@@ -1,7 +1,3 @@
-import './App.css';
-import Cards from './components/Cards';
-// import './components/massiv';
-
 const cardss = [
   {
     name: "Безлимитный 300", 
@@ -41,25 +37,4 @@ const cardss = [
   },
 ]
 
-function App() {
-  return (
-    <div className="App">
-      {
-        cardss.map((card, i) => 
-        <Cards 
-        key={i}
-        name = {card.name} 
-        price = {card.price} 
-        priceTextHigh = {card.priceTextHigh} 
-        priceTextLow = {card.priceTextLow} 
-        speed = {card.speed} 
-        condition = {card.condition} 
-        color = {card.color} 
-        />
-        )
-      }
-    </div>
-  );
-}
-
-export default App;
+export default cardss;

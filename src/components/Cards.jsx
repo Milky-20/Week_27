@@ -1,19 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Cards.css'
 
-class Cards extends React.Component {
-    render() {
-        const {name, price, priceTextHigh, priceTextLow, speed, condition, isSelected, color} = this.props;
+export default function Cards(props) {
+
+// constructor(props){
+//     super(props);
+//     this.state = {
+//         pressed: false
+//     };
+// };
+
+const [pressed, setPressed] = useState(false);
+
+const handleChange = () => {
+    setPressed(!pressed);
+}
+
+    
+        const {name, price, priceTextHigh, priceTextLow, speed, condition, color} = props;
         
         let classCard;
-        if (isSelected) classCard = "selected";
+        if (pressed) classCard = "selected";
 
         return (
 
-            <div className={`card ${classCard}`}>
+            <div className={`card ${classCard}`} onClick = {handleChange}>
             <div className='cardName' style={{backgroundColor: color}}>{name}</div>
                 <div className='card-price' style={{backgroundColor: color}}>
-
                 <span className='priceTextHigh'>{priceTextHigh}</span>
                 <span className='price'>{price}</span>
                 <span className='priceTextLow'>{priceTextLow}</span>
@@ -25,8 +38,6 @@ class Cards extends React.Component {
                 
             </div>
 
-        )
+        );
     }
-}
 
-export default Cards;
