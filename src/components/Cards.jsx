@@ -3,13 +3,6 @@ import './Cards.css'
 
 export default function Cards(props) {
 
-// constructor(props){
-//     super(props);
-//     this.state = {
-//         pressed: false
-//     };
-// };
-
 const [pressed, setPressed] = useState(false);
 
 const handleChange = () => {
